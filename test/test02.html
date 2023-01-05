@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Number guessing game</title>
+    <link rel="stylesheet" href="test02.css">
+  </head>
+
+  <body>
+    <h1>猜數字遊戲</h1>
+
+    <p>玩家要在 10 回合內猜中一個 1 到 100 之間的隨機數字，若猜錯超過 10 次時結束遊戲</p>
+
+    <div class="form">
+      <label for="guessField">輸入猜測數字: </label>
+      <input type="number" min="1" max="100" required id="guessField" class="guessField">
+      <input type="submit" value="送出" class="guessSubmit">
+    </div>
+
+    <div class="resultParas"> 
+      <p class="guesses"></p> <!--答案-->
+      <p class="lastResult"></p>  <!--最後一個猜的數字-->
+      <p class="lowOrHi"></p> <!--高於答案還是低於答案-->
+    </div>
+    <script src="test02.js"></script> 
+
+  </body>
+</html>

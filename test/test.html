@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>External JavaScript example</title>
+    <script src="test01.js" async></script> <!--async→js檔案沒有順序的載入 優點：可以快速載入 缺點：如果有相互關聯的js檔案會發生錯誤-->
+    <!-- <script src="test01.js" defer></script> 
+         <script src="test02.js" defer></script> 
+         defer→js檔案依照寫的先後順序載入，例如：會先載入test01.js(載入完成才會載入下一個)→test02.js   -->
+  </head>
+  <body>
+    <button>Click me</button>
+    <button>點我</button>
+  </body>
+
+</html>
